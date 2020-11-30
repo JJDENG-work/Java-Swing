@@ -1,13 +1,17 @@
 package gks;
 
-public class App implements R,S{
+public class App implements R{
 
 	public static void main(String[] args) {
 		System.out.println(R.boy_filePath);
 		System.out.println(R.girl_filePath);
-		System.out.println(R.array2d[1][1]);
-		System.out.println(S.str);
-
+		
+		for(int row=0; row<R.array2d.length; row++){
+			for (int m=0; m < R.array2d[row].length; m++) {
+				System.out.print(R.array2d[row][m]+" ");
+			}
+			System.out.println();
+		}
 	}
 
 }
